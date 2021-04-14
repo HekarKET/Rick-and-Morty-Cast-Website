@@ -10,7 +10,9 @@ import './style.css'
 const Main = () => {
     //const card = useStoreState(state => state.content);
     const fetchData = useStoreActions(actions => actions.fetchData);
-    useEffect(() => { fetchData(); }, []);
+    useEffect(() => {
+        fetchData();
+    }, []);
     const contents = useStoreState(state => state.content);
 
     //console.log(contents);

@@ -74,6 +74,7 @@
   pointer-events: none;
   width: 100%;
   height: 52vh;
+  background-color: black;
   opacity: 0.05;
 }
 
@@ -182,8 +183,8 @@ form input[type="text"]::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  width: 100%;
-  margin: 85px 0px auto;
+  width: 90%;
+  margin: 85px auto 0px auto;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -219,15 +220,17 @@ form input[type="text"]::placeholder {
   top: 0;
   right: 0;
   left: 0;
-  background: -webkit-gradient(linear, left bottom, right top, from(#cc7171), to(#ac3434));
-  background: linear-gradient(to top right, #cc7171, #ac3434);
-  width: 83%;
+  background-image: url("../assets/card_background.PNG");
+  background-color: black;
   margin: auto;
   height: 150px;
   z-index: -2;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-radius: 5%;
+  width: 83%;
+  background-repeat: no-repeat;
+  background-size: 100% 145%;
 }
 
 .outer-card {
@@ -261,6 +264,7 @@ form input[type="text"]::placeholder {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  text-transform: capitalize;
   color: black;
   font-size: 16px;
   height: 4ch;
