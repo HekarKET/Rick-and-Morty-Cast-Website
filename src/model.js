@@ -3,9 +3,11 @@ import { action, thunk } from 'easy-peasy';
 
 export default {
     content: [],
+    loading: true,
     fetchData: thunk(async actions => {
         const page = Math.random() * 20;
         try {
+            actions.setLoading(true);
             const req = await axios.get(`https://rickandmortyapi.com/api/character/?page=${page}`)
                 .then(data => data.data)
                 .catch(err => console.log(err));
@@ -13,6 +15,7 @@ export default {
 
 
             actions.setContent(result);
+            actions.setLoading(false);
 
         } catch (error) {
             console.log(error);
@@ -34,6 +37,12 @@ export default {
         ));
 
         state.content = [...contentNeeded];
+    }
+    ),
+
+    setLoading: action((state, bool) => {
+        state.loading = bool;
+
     })
 
 }

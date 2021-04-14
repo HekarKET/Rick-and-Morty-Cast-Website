@@ -198,6 +198,7 @@ form input[type="text"]::placeholder {
   width: 180px;
   height: 250px;
   z-index: 1;
+  margin-bottom: 8px;
 }
 
 .inner-card {

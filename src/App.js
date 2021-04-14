@@ -7,6 +7,9 @@ import './App.css';
 
 const store = createStore(model);
 
+
+
+
 function App() {
 
 
@@ -15,6 +18,8 @@ function App() {
     <>
       <StoreProvider store={store}>
         <Header />
+
+
         <Main />
       </StoreProvider>
 
