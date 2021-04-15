@@ -1,13 +1,14 @@
 import './style.css'
-import { useStoreActions, useStoreState } from 'easy-peasy'
+import { useStoreActions } from 'easy-peasy'
+import Dropdown from './dropdown'
 
 
 const Form = () => {
 
-    const content = useStoreState(state => state.content);
+
     const setQuery = useStoreActions((actions) => actions.setQuery);
     const fetchQuery = useStoreActions((actions) => actions.fetchQuery);
-    const setFilterContent = useStoreActions((actions) => actions.setFilterContent);
+
 
 
     const fetchByName = async (e) => {
@@ -18,32 +19,24 @@ const Form = () => {
 
     }
 
-    const filter = (e) => {
-        e.preventDefault();
-        const val = 'alive';
-        switch (val) {
-            case 'alive':
-                setFilterContent(content.filter(element => element.status === 'Alive'));
-                break;
-            default: console.log('error');
-        }
 
-    }
 
     return (
 
-        <form>
+        <div className="form">
 
-            <input type='text' placeholder='Search by Name' id='input'></input>
+            <form>
 
-            <button className='btn-fetchbyname' onClick={fetchByName}> Search </button>
-
-
-            <button className='btn-filter' onClick={filter}> Filter </button>
+                <input type='text' placeholder='Search by Name' id='input'></input>
+                <button className='btn-fetchbyname' onClick={fetchByName}> Search </button>
 
 
+            </form >
 
-        </form >
+            <Dropdown
+
+            />
+        </div>
     );
 }
 

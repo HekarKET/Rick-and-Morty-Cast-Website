@@ -1,6 +1,5 @@
-import Header from './components/header'
-import Main from './components/main'
 import { StoreProvider, createStore } from 'easy-peasy';
+import Home from './components/home'
 
 import model from './model'
 import './App.css';
@@ -18,11 +17,8 @@ function App() {
   return (
     <>
       <StoreProvider store={store}>
-        <Header />
 
-        {/* {error ? 'Something is wrong, please refresh' : } */}
-        <Main />
-
+        <Home></Home>
 
       </StoreProvider>
 

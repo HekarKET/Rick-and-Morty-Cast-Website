@@ -94,7 +94,7 @@
           transform: translate(-50%, -50%);
 }
 
-form {
+.form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,8 +105,94 @@ form {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 8px;
-  width: 500px;
+  width: 87%;
   margin: auto;
+}
+
+.dropdown {
+  padding: 0px;
+  border-radius: 5px;
+  position: relative;
+  font-weight: 500;
+  background-color: transparent;
+  width: 50px;
+  margin-left: 5px;
+  z-index: 3;
+}
+
+.dropdown p {
+  font-size: 3vmin;
+  padding: 2px;
+  margin: 0;
+  pointer-events: none;
+}
+
+.dropdown > p {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown li {
+  list-style-type: none;
+  border-bottom: 1px solid #6B727C;
+}
+
+.dropdown:hover .mainmenu, .dropdown :active .mainmenu {
+  display: block;
+  position: absolute;
+}
+
+.mainmenu {
+  display: none;
+  background-color: #a7a7a7;
+  opacity: 0.4;
+}
+
+.mainmenu li {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  background-color: #a7a7a7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+
+.submenu li {
+  margin-right: 2px;
+}
+
+.mainmenu li:hover, .mainmenu li:active {
+  background-color: #1f4037;
+}
+
+.mainmenu li:hover .submenu, .mainmenu li:active .submenu {
+  display: block;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 500px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 form input[type="text"] {
@@ -145,6 +231,7 @@ form .btn-fetchbyname {
 .main {
   background: -webkit-gradient(linear, left top, right top, from(#1f4037), to(#99f2c8));
   background: linear-gradient(to right, #1f4037, #99f2c8);
+  min-height: 40vh;
 }
 
 .body-card {
@@ -319,6 +406,12 @@ p {
     color: white;
     -webkit-animation: width-navbar 200ms linear;
             animation: width-navbar 200ms linear;
+  }
+  .submenu {
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
   }
   #hidden {
     display: -webkit-box;
