@@ -6,10 +6,7 @@ const Home = () => {
 
         <React.Fragment>
             <Header />
-
-
             <Main />
-
         </React.Fragment>
 
     );

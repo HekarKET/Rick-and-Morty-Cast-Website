@@ -12,10 +12,15 @@ const Form = () => {
 
 
     const fetchByName = async (e) => {
-        e.preventDefault();
-        const text = document.getElementById('input');
-        await setQuery(text.value);
-        fetchQuery();
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            const text = document.getElementById('input');
+            await setQuery(text.value);
+            console.log(text.value)
+            fetchQuery();
+
+        }
+
 
     }
 
@@ -27,15 +32,14 @@ const Form = () => {
 
             <form>
 
-                <input type='text' placeholder='Search by Name' id='input'></input>
-                <button className='btn-fetchbyname' onClick={fetchByName}> Search </button>
+                <input type='text' placeholder='Search by Name' id='input' onKeyDown={fetchByName}></input>
+                {/* <button className='btn-fetchbyname' onClick={fetchByName}> Search </button> */}
+                <Dropdown />
 
 
             </form >
 
-            <Dropdown
 
-            />
         </div>
     );
 }

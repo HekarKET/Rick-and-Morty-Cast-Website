@@ -37,7 +37,7 @@ const Main = () => {
         < div className="main" >
 
 
-            {status ? <PacmanLoader size={150} color={"#73F80F"} /> :
+            {status ? <PacmanLoader size={100} color={"#73F80F"} /> :
 
                 <React.Fragment>
                     <Form />

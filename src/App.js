@@ -1,6 +1,6 @@
 import { StoreProvider, createStore } from 'easy-peasy';
 import Home from './components/home'
-
+import Navbar from './components/navbar'
 import model from './model'
 import './App.css';
 
@@ -17,8 +17,9 @@ function App() {
   return (
     <>
       <StoreProvider store={store}>
+        <Navbar />
 
-        <Home></Home>
+        <Home />
 
       </StoreProvider>
 
