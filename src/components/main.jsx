@@ -10,10 +10,9 @@ import './style.css'
 
 const Main = () => {
     //const card = useStoreState(state => state.content);
-    const contents = useStoreState(state => state.content);
+    const filterContent = useStoreState(state => state.filterContent);
     const fetchData = useStoreActions(actions => actions.fetchData);
     const status = useStoreState(state => state.loading);
-
 
 
     useEffect(() => {
@@ -22,6 +21,9 @@ const Main = () => {
         }, 1000);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
+
+
+
 
 
 
@@ -39,9 +41,10 @@ const Main = () => {
 
                 <React.Fragment>
                     <Form />
+
                     <div className="body-card">
 
-                        {contents.map(content => (
+                        {filterContent.map(content => (
                             <Card
                                 key={content.id}
                                 id={content.id}

@@ -133,7 +133,7 @@ form input[type="text"]::placeholder {
   font-size: 13px;
 }
 
-form button {
+form .btn-fetchbyname {
   margin-left: 10px;
   font-size: 16px;
   padding: 5px 7px 5px 7px;

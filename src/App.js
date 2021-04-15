@@ -14,13 +14,16 @@ function App() {
 
 
 
+
   return (
     <>
       <StoreProvider store={store}>
         <Header />
 
-
+        {/* {error ? 'Something is wrong, please refresh' : } */}
         <Main />
+
+
       </StoreProvider>
 
 
