@@ -3,7 +3,9 @@ import { action, thunk } from 'easy-peasy';
 
 export default {
     content: [],
+    filterContent: [],
     loading: true,
+    query: '',
     fetchData: thunk(async actions => {
         const page = Math.random() * 20;
         try {
@@ -13,6 +15,22 @@ export default {
                 .catch(err => console.log(err));
             const result = req.results
 
+            actions.setContent(result);
+            actions.setLoading(false);
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    ),
+    fetchQuery: thunk(async (actions, query) => {
+        const page = Math.random() * 20;
+        try {
+            actions.setLoading(true);
+            const req = await axios.get(`${query}`)
+                .then(data => data.data)
+                .catch(err => console.log(err));
+            const result = req.results
 
             actions.setContent(result);
             actions.setLoading(false);
@@ -22,6 +40,7 @@ export default {
         }
     }
     ),
+
     setContent: action((state, content) => {
         //const contentNeeded = content.map(contents => ([contents.id, contents.name, contents.status, content.url]));
         const contentNeeded = content.map(contents => ({
@@ -43,6 +62,10 @@ export default {
     setLoading: action((state, bool) => {
         state.loading = bool;
 
+    }),
+
+    setQuery: action((state, name) => {
+        state.query = `https://rickandmortyapi.com/api/character/?name=${name}`
     })
 
 }

@@ -98,13 +98,15 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 8px;
+  width: 500px;
+  margin: auto;
 }
 
 form input[type="text"] {
@@ -112,6 +114,7 @@ form input[type="text"] {
   font-size: 16px;
   font-weight: 400;
   padding: 5px;
+  border-radius: 5px;
 }
 
 form input[type="text"]::-webkit-input-placeholder {
@@ -130,44 +133,13 @@ form input[type="text"]::placeholder {
   font-size: 13px;
 }
 
-.ddmenu {
-  margin-left: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ddmenu button {
+form button {
   margin-left: 10px;
-}
-
-.ddmenu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.ddmenu li {
-  list-style-type: none;
-  border: solid 1px #2abbff;
-}
-
-.ddmenu .hidden {
-  display: none;
+  font-size: 16px;
+  padding: 5px 7px 5px 7px;
+  border-radius: 5px;
+  background-color: #05ff05;
+  border: 0;
 }
 
 .main {

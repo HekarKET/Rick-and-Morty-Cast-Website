@@ -13,12 +13,14 @@ const Main = () => {
     const contents = useStoreState(state => state.content);
     const fetchData = useStoreActions(actions => actions.fetchData);
     const status = useStoreState(state => state.loading);
+
+
+
     useEffect(() => {
-
+        fetchData();
         setTimeout(() => {
-            fetchData();
-
         }, 1000);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
 
