@@ -1,27 +1,26 @@
-<!-- PROJECT LOGO -->
+<h1 align="center">Rick and Morty Website</h1>
+<p align="center"> React project that uses the Rick and Morty API to show and filter characters from the show.</p>
 
+### Responsive design 
 
-  <h1 align="center">Rick and Morty Website</h1>
+<p align="center">
+  <img src = "https://user-images.githubusercontent.com/63460746/115011381-3256d300-9ecc-11eb-9eb5-639cf8ea9977.PNG" width="700" height="450">
+  <img src = "https://user-images.githubusercontent.com/63460746/115010152-b90ab080-9eca-11eb-87b7-38e72cae320c.PNG" width="700" height="450" > 
+  <table>
+    <tr>
+          <td> 
+                <img src = "https://user-images.githubusercontent.com/63460746/115010155-b9a34700-9eca-11eb-8810-26d12e5119f6.jpeg" width="300"                      height="450">
+          </td>
+          <td>
+              <img src = "https://user-images.githubusercontent.com/63460746/115010720-5cf45c00-9ecb-11eb-808b-6433e105cd29.jpeg" width="300"                     height="450">   
+          </td>
+          <td>
+              <img src = "https://user-images.githubusercontent.com/63460746/115013716-0852e000-9ecf-11eb-9af3-6cf38c35dfb4.png" width="300"                       height="450"> </td>
+    </tr>
 
-  
-
-
-<!-- ABOUT THE PROJECT -->
-
-## Responsive design 
-
-<table>
-  <tr><td><img src = "https://user-images.githubusercontent.com/63460746/115010152-b90ab080-9eca-11eb-87b7-38e72cae320c.PNG" width="700" height="450"> </td></tr>
-  <tr>
-<img src = "https://user-images.githubusercontent.com/63460746/115011381-3256d300-9ecc-11eb-9eb5-639cf8ea9977.PNG" width="700" height="450">
-  </tr>
-  <tr>
-        <td> <img src = "https://user-images.githubusercontent.com/63460746/115010155-b9a34700-9eca-11eb-8810-26d12e5119f6.jpeg" width="300" height="450"></td>
-  <td><img src = "https://user-images.githubusercontent.com/63460746/115010720-5cf45c00-9ecb-11eb-808b-6433e105cd29.jpeg" width="300" height="450"> </td></tr>
-  
   </table>
 
-
+</p>
 
 
 
