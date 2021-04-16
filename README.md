@@ -9,13 +9,13 @@
   <table>
     <tr>
           <td> 
-                <img src = "https://user-images.githubusercontent.com/63460746/115010155-b9a34700-9eca-11eb-8810-26d12e5119f6.jpeg" width="100%"                      height="450">
+                <img src = "https://user-images.githubusercontent.com/63460746/115010155-b9a34700-9eca-11eb-8810-26d12e5119f6.jpeg" width="100%"                      max-height="450">
           </td>
           <td>
-              <img src = "https://user-images.githubusercontent.com/63460746/115010720-5cf45c00-9ecb-11eb-808b-6433e105cd29.jpeg" width="100%"                     height="450">   
+              <img src = "https://user-images.githubusercontent.com/63460746/115010720-5cf45c00-9ecb-11eb-808b-6433e105cd29.jpeg" width="100%"                     max-height="450">   
           </td>
           <td>
-              <img src = "https://user-images.githubusercontent.com/63460746/115013716-0852e000-9ecf-11eb-9af3-6cf38c35dfb4.png" width="100%"                       height="450"> </td>
+              <img src = "https://user-images.githubusercontent.com/63460746/115013716-0852e000-9ecf-11eb-9af3-6cf38c35dfb4.png" width="100%"                       max-height="450"> </td>
     </tr>
 
   </table>
